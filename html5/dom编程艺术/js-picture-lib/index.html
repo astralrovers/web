@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset='utf-8' />
+        <title>js picture lib</title>
+        <script type='text/javascript' src='js/place-picture.js'></script>
+        <link rel='stylesheet' type='text/css' href='css/simple.css' />
+    </head>
+    <body>
+        <h1>My Picture</h1>
+        <ul id='gallery'>
+            <li>
+                <!-- onclick 后面加return false;是为了让a认为没有被点击
+                    让我们近距离了解一下事件处理函数的工作机制。在给某个元素添加了事件处理函数后，一
+                    旦事件发生，相应的 JavaScript 代码就会得到执行。被调用的 JavaScript 代码可以返回一个值，
+                    这个值将被传递给那个事件处理函数。例如，我们可以给某个链接添加一个 onclick 事件处理函
+                    数，并让这个处理函数所触发的 JavaScript 代码返回布尔值 true 或 false 。这样一来，当这个链
+                    接被点击时，如果那段 JavaScript代码返回的值是 true ， onclick 事件处理函数就认为“这个链接
+                    被点击了”；反之，如果返回的值是 false ， onclick 事件处理函数就认为“这个链接没有被点击”。
+                -->
+                <a href='img/55213027_p0.jpg' title='my lock screen' >lock screen</a>
+            </li>
+            <li>
+                <a href='img/55723791_p0.png' title='my background' >background</a>
+            </li>
+            <li>
+                <a href='img/overwatch widowmaker.jpg' title='my icon' >icon</a>
+            </li>
+        </ul>
+        <img id='placeholder' atl='my img holder' src='img/icon.jpg' width='800'/>
+        <p id='description'>choose an image.</p>
+    </body>
+</html>
