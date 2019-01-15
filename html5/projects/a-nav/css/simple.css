@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.box1 {
+    margin: 20px auto;
+    width: 800px;
+    background-color: skyblue;
+}
+
+.box1 li {
+    list-style: none;
+    float: left;
+    width: 25%;
+}
+
+.box1 a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+.box1 #clearfloat:after {
+    content: "";
+    display: block;
+    clear: both;
+}
